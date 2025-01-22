@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Аренда недвижимости в Казахстане</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            color: #f4f4f4;
+            line-height: 1.8;
+            background-color: #2b2523;
+        }
+
+        header {
+            background-color: #4a3f35;
+            padding: 20px 10px;
+            text-align: center;
+            color: #f4f4f4;
+            border-bottom: 3px solid #8d6e63;
+        }
+
+        header h1 {
+            font-size: 2.8em;
+            font-weight: 700;
+            letter-spacing: 1px;
+            margin-bottom: 10px;
+        }
+
+        nav {
+            margin: 20px 0;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #d7ccc8;
+            margin: 0 15px;
+            font-size: 1.2em;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #ffffff;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background-color: #3e342f;
+            border: 1px solid #8d6e63;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.25);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .card-content {
+            padding: 20px;
+        }
+
+        .card-content h3 {
+            font-size: 1.6em;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        .card-content p {
+            margin-bottom: 10px;
+            font-size: 1.1em;
+            color: #d7ccc8;
+        }
+
+        .card-content .price {
+            font-size: 1.3em;
+            color: #ffcc80;
+            font-weight: bold;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #4a3f35;
+            color: #d7ccc8;
+            margin-top: 20px;
+            border-top: 3px solid #8d6e63;
+            font-size: 1.1em;
+        }
+
+        .more-button {
+            display: block;
+            text-align: center;
+            margin: 30px auto;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            font-weight: 500;
+            color: #ffffff;
+            background-color: #8d6e63;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        .more-button:hover {
+            background-color: #a1887f;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Аренда недвижимости в Казахстане</h1>
+        <nav>
+            <a href="about.html">Главная</a>
+            <a href="index.html">Объявления</a>
+        </nav>
+    </header>
+
+<main class="container">
+        <section class="grid">
+            <div class="card">
+                <img src="1-750x470.jpg" alt="Офис в Алматы">
+                <div class="card-content">
+                    <h3>Офис в Алматы</h3>
+                    <p>Местоположение: Байтерек 27</p>
+                    <p>Описание: 5-комнатный офис с удобным местоположением. Рядом есть кафе, кофейня и магазин.</p>
+                    <p class="price">150 000 ₸ / неделя</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="313ba106e2c279d94975aed674a0d245.jpg" alt="Современная вилла">
+                <div class="card-content">
+                    <h3>Современная вилла</h3>
+                    <p>Местоположение: Центр города</p>
+                    <p>Описание: Просторная и роскошная вилла с современными удобствами.</p>
+                    <p class="price">250 000 ₸ / неделя</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="diploma.webp" alt="Уютный коттедж">
+                <div class="card-content">
+                    <h3>Уютный коттедж</h3>
+                    <p>Местоположение: Пригород</p>
+                    <p>Описание: Очаровательный коттедж с красивым садом и живописным видом.</p>
+                    <p class="price">120 000 ₸ / неделя</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="evans-st-franklin-historic-district-p-shea-design-img~9c0165b5020513f2_9-1261-1-e186155.jpg" alt="Дом для семьи">
+                <div class="card-content">
+                    <h3>Дом для семьи</h3>
+                    <p>Местоположение: Уютный район</p>
+                    <p>Описание: Просторный дом, идеально подходящий для семьи. Большой двор и детская площадка.</p>
+                    <p class="price">200 000 ₸ / неделя</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="33b23e3e4cba0ddb61d8bc8ef57d5030.jpg" alt="Шале в горах">
+                <div class="card-content">
+                    <h3>Шале в горах</h3>
+                    <p>Местоположение: Горный регион</p>
+                    <p>Описание: Уютное шале с потрясающим видом на горы.</p>
+                    <p class="price">220 000 ₸ / неделя</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="XXL_height.webp" alt="Загородный дом">
+                <div class="card-content">
+                    <h3>Загородный дом</h3>
+                    <p>Местоположение: Тихий пригород</p>
+                    <p>Описание: Идеальный дом для семьи с просторными комнатами и большим садом.</p>
+                    <p class="price">180 000 ₸ / неделя</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="aba7a39c909e193ecba0bfb113698fd3.jpg" alt="Экологичный дом">
+                <div class="card-content">
+                    <h3>Экологичный дом</h3>
+                    <p>Местоположение: Зелёная зона</p>
+                    <p>Описание: Дом с солнечными панелями и современными удобствами.</p>
+                    <p class="price">160 000 ₸ / неделя</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="gostinaya-sovremennom-stile-kvartira-studiya-molodoi-pary-foto-1.jpg" alt="Квартира для пары">
+                <div class="card-content">
+                    <h3>Квартира для пары</h3>
+                    <p>Местоположение: Рядом с парком</p>
+                    <p>Описание: Уютная квартира с одной спальней и современным ремонтом.</p>
+                    <p class="price">100 000 ₸ / неделя</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="3861177856cb9996c8266edcf248465c.jpg" alt="Дом на берегу озера">
+                <div class="card-content">
+                    <h3>Дом на берегу озера</h3>
+                    <p>Местоположение: Лесной регион</p>
+                    <p>Описание: Прекрасный дом с видом на озеро и личным причалом.</p>
+                    <p class="price">300 000 ₸ / неделя</p>
+                </div>
+            </div>
+        </section>
+        <button class="more-button">Ещё варианты</button>
+    </main>
+
+<footer>
+        © 2025 Аренда недвижимости в Казахстане. Все права защищены.
+    </footer>
+</body>
+</html>
+<script>
+    const moreButton = document.querySelector('.more-button');
+    const grid = document.querySelector('.grid');
+
+    const newHouses = [
+        {
+            image: "image-120.jpg",
+            title: "Современный таунхаус",
+            location: "Центральный район",
+            description: "Просторный и стильный таунхаус с террасой.",
+            price: "170 000 ₸ / неделя",
+        },
+        {
+            image: "i (4).webp",
+            title: "Дом у озера",
+            location: "Живописное место",
+            description: "Уединённый дом с видом на озеро.",
+            price: "200 000 ₸ / неделя",
+        },
+        {
+            image: "755954332266090.jpg",
+            title: "Лофт в центре",
+            location: "Деловой район",
+            description: "Стильный лофт с панорамными окнами.",
+            price: "250 000 ₸ / неделя",
+        },
+        {
+            image: "d6e95.jpg",
+            title: "Семейный коттедж",
+            location: "Район с парком",
+            description: "Прекрасный вариант для семьи с детьми.",
+            price: "180 000 ₸ / неделя",
+        },
+        {
+            image: "jpg_2000.jpg",
+            title: "Квартира студия",
+            location: "Центр города",
+            description: "Уютная студия с современным ремонтом.",
+            price: "120 000 ₸ / неделя",
+        }
+    ];
+
+    moreButton.addEventListener('click', () => {
+        newHouses.forEach(house => {
+            const card = document.createElement('div');
+            card.className = 'card';
+            card.innerHTML = `
+                <img src="${house.image}" alt="${house.title}">
+                <div class="card-content">
+                    <h3>${house.title}</h3>
+                    <p>Местоположение: ${house.location}</p>
+                    <p>Описание: ${house.description}</p>
+                    <p class="price">${house.price}</p>
+                </div>
+            `;
+            grid.appendChild(card);
+        });
+        moreButton.style.display = 'none'; // Убрать кнопку после добавления домов
+    });
+</script>
+<style>
+    /* Кнопка "Главная" */
+    .back-to-top {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        width: 60px;
+        height: 60px;
+        background: linear-gradient(135deg, #8d6e63, #4a3f35);
+        color: #fff;
+        border: none;
+        border-radius: 50%;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        cursor: pointer;
+        font-size: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.3s ease;
+        z-index: 1000;
+    }
+
+    .back-to-top:hover {
+        background: linear-gradient(135deg, #a1887f, #6e5448);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+        transform: scale(1.1);
+    }
+
+    .back-to-top.show {
+        opacity: 1;
+        visibility: visible;
+    }
+</style>
+
+<!-- Кнопка "Главная" -->
+<button class="back-to-top" id="backToTop" title="Наверх">↑</button>
+
+<script>
+    // Логика показа и работы кнопки
+    const backToTopButton = document.getElementById('backToTop');
+
+    // Показать кнопку при прокрутке вниз
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 300) {
+            backToTopButton.classList.add('show');
+        } else {
+            backToTopButton.classList.remove('show');
+        }
+    });
+
+    // Скролл наверх при нажатии
+    backToTopButton.addEventListener('click', () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+</script>

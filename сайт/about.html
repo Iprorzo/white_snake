@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Аренда недвижимости в Казахстане</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            color: #f4f4f4;
+            line-height: 1.8;
+            background-color: #2b2523;
+        }
+
+        header {
+            background-color: #4a3f35;
+            padding: 20px 10px;
+            text-align: center;
+            color: #f4f4f4;
+            border-bottom: 3px solid #8d6e63;
+        }
+
+        header h1 {
+            font-size: 2.8em;
+            font-weight: 700;
+            letter-spacing: 1px;
+            margin-bottom: 10px;
+        }
+
+        nav {
+            margin: 20px 0;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #d7ccc8;
+            margin: 0 15px;
+            font-size: 1.2em;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #ffffff;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background-color: #3e342f;
+            border: 1px solid #8d6e63;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.25);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .card-content {
+            padding: 20px;
+        }
+
+        .card-content h3 {
+            font-size: 1.6em;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        .card-content p {
+            margin-bottom: 10px;
+            font-size: 1.1em;
+            color: #d7ccc8;
+        }
+
+        .card-content .price {
+            font-size: 1.3em;
+            color: #ffcc80;
+            font-weight: bold;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #4a3f35;
+            color: #d7ccc8;
+            margin-top: 20px;
+            border-top: 3px solid #8d6e63;
+            font-size: 1.1em;
+        }
+
+        /* Стили для блока "Красота, Элегантность, Удобство" */
+        .features {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 50px;
+        }
+
+        .feature-card {
+            background-color: #8d6e63;
+            padding: 20px;
+            border-radius: 10px;
+            width: 30%;
+            text-align: center;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .feature-card:hover {
+            transform: scale(1.05);
+        }
+
+        .feature-card h3 {
+            font-size: 1.5em;
+            color: #fff;
+            margin-bottom: 10px;
+        }
+
+        .feature-card p {
+            color: #fff;
+            font-size: 1.2em;
+        }
+
+        /* Стили для блока "Служба поддержки" */
+        .support-section {
+            background-color: #3e342f;
+            padding: 40px;
+            margin-top: 50px;
+            text-align: center;
+            border-radius: 10px;
+        }
+
+        .support-section h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .support-section p {
+            font-size: 1.2em;
+            color: #d7ccc8;
+            margin-bottom: 20px;
+        }
+
+        .support-button {
+            background-color: #8d6e63;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .support-button:hover {
+            background-color: #a1887f;
+        }
+
+        /* Кнопка перехода к объявлениям */
+        .view-listings-button {
+            display: block;
+            text-align: center;
+            margin: 30px auto;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            font-weight: 500;
+            color: #ffffff;
+            background-color: #8d6e63;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        .view-listings-button:hover {
+            background-color: #a1887f;
+            transform: scale(1.05);
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Аренда недвижимости в Казахстане</h1>
+        <nav>
+            <a href="about.html">Главная</a>
+            <a href="index.html">Объявления</a>
+        </nav>
+    </header>
+    
+
+    <main class="container">
+        <!-- Новый блок с красивыми словами -->
+        <section class="features">
+            <div class="feature-card">
+                <h3>Красота</h3>
+                <p>Мы предлагаем лучшие и самые красивые объекты недвижимости.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Элегантность</h3>
+                <p>Каждый дом и квартира подчеркивает элегантность вашего выбора.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Удобство</h3>
+                <p>Все наши объекты обеспечивают максимальный комфорт и удобство для вашего проживания.</p>
+            </div>
+        </section>
+
+        <a href="index.html">
+            <button class="view-listings-button">Посмотреть объявления</button>
+        </a>
+        
+        <!-- Блок "Служба поддержки" -->
+        <section class="support-section">
+            <h2>Нужна помощь?</h2>
+            <p>Наша служба поддержки всегда готова ответить на ваши вопросы и помочь вам в выборе недвижимости.</p>
+            <button class="support-button">Связаться с нами</button>
+        </section>
+    </main>
+
+    <footer>
+        © 2025 Аренда недвижимости в Казахстане. Все права защищены.
+    </footer>
+</body>
+</html>
+``
